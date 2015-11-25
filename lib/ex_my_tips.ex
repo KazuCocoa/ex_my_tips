@@ -1,0 +1,2 @@
+defmodule ExMyTips do
+end
