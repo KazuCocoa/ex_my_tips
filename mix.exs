@@ -15,7 +15,11 @@ defmodule ExMyTips.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     [
-      applications: [:logger, :httpoison]
+      applications: [
+        :logger,
+        :httpoison,
+        :faker
+      ]
     ]
   end
 
@@ -24,7 +28,8 @@ defmodule ExMyTips.Mixfile do
       {:poison, "~> 1.5"},   # fot JSON
       {:cowboy, "~> 1.0.0"}, # for Plug
       {:plug, "~> 1.0"},     # for Plug
-      {:httpoison, "~> 0.8"}
+      {:httpoison, "~> 0.8"},# for HTTP requests
+      {:faker, "~> 0.6.0"}   # for fake data
     ]
   end
 end
